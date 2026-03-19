@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
@@ -11,6 +12,11 @@ body{
     font-family: "Courier New", monospace;
     background:#f4ecd8;
     color:#333;
+}
+
+/* Cuộn mượt */
+html{
+    scroll-behavior:smooth;
 }
 
 /* Header */
@@ -44,6 +50,16 @@ header{
 
 .menu li{
     padding:10px 0;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#8b5e3c;
 }
 
 /* Nội dung */
@@ -82,12 +98,13 @@ footer{
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>📓 Sổ Tay Ký Ức</h1>
+<h1 id="home">📓 Sổ Tay Ký Ức</h1>
 <p>Nơi lưu giữ thanh xuân của Khánh Hân</p>
 </header>
 
@@ -96,14 +113,18 @@ footer{
 <div class="menu">
 <h3>Mục</h3>
 <ul>
-<li>🏠 Trang chủ</li>
-<li>📷 Ảnh của lớp mình</li>
-<li>👯 Bạn bè</li>
-<li>📝 Nhật ký</li>
+<li><a href="#home">🏠 Trang chủ</a></li>
+<li><a href="#photos">📷 Ảnh của lớp mình</a></li>
+<li><a href="#friends">👯 Bạn bè</a></li>
+<li><a href="#diary">📝 Nhật ký</a></li>
 </ul>
 </div>
 
 <div class="content">
+
+<!-- Ảnh -->
+
+<h2 id="photos">📷 Ảnh của lớp mình</h2>
 
 <div class="photo">
 <img src="z7623079121791_127d710e6bf8968e7e2db38bf82894da.jpg">
@@ -117,8 +138,15 @@ footer{
 <img src="z7623079132300_ebabf93c1013319a8a3604da25858bf9.jpg">
 </div>
 
-<div class="diary">
-<h2>Nhật ký</h2>
+<!-- Bạn bè -->
+
+<h2 id="friends">👯 Bạn bè</h2>
+<p>Danh sách bạn bè của lớp sẽ được thêm tại đây 💖</p>
+
+<!-- Nhật ký -->
+
+<div class="diary" id="diary">
+<h2>📝 Nhật ký</h2>
 <p>
 Những năm tháng học cùng 12C04 là khoảng thời gian đáng nhớ nhất.
 Mỗi ngày đến lớp đều có tiếng cười, những câu chuyện ngốc nghếch,
